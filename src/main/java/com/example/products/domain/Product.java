@@ -3,10 +3,30 @@ package com.example.products.domain;
 public class Product {
     private String product;
     private String id;
+    private String price;
+    private String weight;
 
-    public Product(String product, String id) {
+    public Product(String product, String id, String price, String weight) {
         this.product = product;
         this.id = id;
+        this.weight = weight;
+        this.price = price;
+    }
+
+    public String getPrice() {
+        return price;
+    }
+
+    public void setPrice(String price) {
+        this.price = price;
+    }
+
+    public String getWeight() {
+        return weight;
+    }
+
+    public void setWeight(String weight) {
+        this.weight = weight;
     }
 
     public Product() {
